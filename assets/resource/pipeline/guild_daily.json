@@ -2,7 +2,12 @@
     "任务入口": {
         "recognition": "OCR",
         "expected": "任务",
-        "roi": [30, 265, 100, 110],
+        "roi": [
+            30,
+            265,
+            100,
+            110
+        ],
         "action": "Click",
         "post_delay": 500,
         "next": "公会入口"
@@ -10,7 +15,12 @@
     "公会入口": {
         "recognition": "OCR",
         "expected": "公会",
-        "roi": [150, 538, 70, 52],
+        "roi": [
+            150,
+            538,
+            70,
+            52
+        ],
         "action": "Click",
         "post_delay": 500,
         "next": "等级7领取任务"
@@ -62,18 +72,18 @@
         "expected": "等级7",
         "action": "Click",
         "post_delay": 500,
-        "next": "领取"
-    },
-    "领取": {
-        "recognition": "OCR",
-        "expected": "领取",
-        "action": "Click",
-        "post_delay": 500,
-        "next": "返回主界面"
+        "next": "公会_领取"
     },
     "返回主界面": {
         "recognition": "DirectHit",
         "action": "ClickKey",
         "key": 4
+    },
+    "公会_领取": {
+        "recognition": "OCR",
+        "expected": "领取",
+        "action": "Click",
+        "post_delay": 500,
+        "next": "返回主界面"
     }
 }
