@@ -2,7 +2,12 @@
     "结晶起点": {
         "recognition": "OCR",
         "expected": "任务",
-        "roi": [30, 265, 100, 110],
+        "roi": [
+            30,
+            265,
+            100,
+            110
+        ],
         "action": "Click",
         "post_delay": 500,
         "next": "结晶搜集_点任务"
@@ -17,19 +22,32 @@
     "结晶搜集_关卡起点": {
         "recognition": "DirectHit",
         "action": "DoNothing",
-        "next": ["结晶搜集_灭级就位", "结晶搜集_上滑"]
+        "next": [
+            "结晶搜集_灭级就位",
+            "结晶搜集_上滑"
+        ]
     },
     "结晶搜集_灭级就位": {
         "recognition": "OCR",
         "expected": "灭级",
-        "roi": [740, 275, 310, 60],
+        "roi": [
+            740,
+            275,
+            310,
+            60
+        ],
         "action": "DoNothing",
         "next": "结晶搜集_速读"
     },
     "结晶搜集_速读": {
         "recognition": "OCR",
         "expected": "速读",
-        "roi": [1140, 470, 130, 80],
+        "roi": [
+            1140,
+            470,
+            130,
+            80
+        ],
         "action": "Click",
         "post_delay": 1000,
         "next": "结晶搜集_选9号编队"
@@ -37,14 +55,24 @@
     "结晶搜集_选9号编队": {
         "recognition": "DirectHit",
         "action": "Click",
-        "target": [617, 160, 1, 1],
+        "target": [
+            617,
+            160,
+            1,
+            1
+        ],
         "post_delay": 500,
         "next": "结晶搜集_速读确定"
     },
     "结晶搜集_速读确定": {
         "recognition": "OCR",
         "expected": "确定",
-        "roi": [650, 615, 180, 90],
+        "roi": [
+            650,
+            615,
+            180,
+            90
+        ],
         "action": "Click",
         "post_delay": 2000,
         "next": "结晶搜集_结果确定"
@@ -52,7 +80,12 @@
     "结晶搜集_结果确定": {
         "recognition": "OCR",
         "expected": "确定",
-        "roi": [470, 615, 230, 100],
+        "roi": [
+            470,
+            615,
+            230,
+            100
+        ],
         "action": "Click",
         "post_delay": 1000,
         "next": "结晶搜集_溢出确定"
@@ -60,7 +93,12 @@
     "结晶搜集_溢出确定": {
         "recognition": "OCR",
         "expected": "确定",
-        "roi": [500, 455, 170, 95],
+        "roi": [
+            500,
+            455,
+            170,
+            95
+        ],
         "action": "Click",
         "post_delay": 1000,
         "next": "结晶搜集_返回"
@@ -75,7 +113,12 @@
     "结晶搜集_点任务领奖": {
         "recognition": "OCR",
         "expected": "任务",
-        "roi": [30, 265, 100, 110],
+        "roi": [
+            30,
+            265,
+            100,
+            110
+        ],
         "action": "Click",
         "post_delay": 500,
         "next": "结晶搜集_点结晶奖励"
@@ -102,8 +145,14 @@
     "结晶搜集_上滑": {
         "recognition": "DirectHit",
         "action": "Swipe",
-        "begin": [880, 480],
-        "end": [880, 260],
+        "begin": [
+            880,
+            480
+        ],
+        "end": [
+            880,
+            260
+        ],
         "duration": 400,
         "post_delay": 500,
         "next": "结晶搜集_关卡起点"

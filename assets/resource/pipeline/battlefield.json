@@ -106,14 +106,14 @@
         "recognition": "OCR",
         "expected": "获得战利品",
         "roi": [
-            400,
-            490,
-            400,
-            90
+            480,
+            435,
+            200,
+            50
         ],
-        "timeout": 600000,
         "action": "DoNothing",
-        "next": "战场_结算下一步"
+        "next": "战场_结算下一步",
+        "post_delay": 5000
     },
     "战场_结算下一步": {
         "recognition": "DirectHit",
@@ -151,7 +151,8 @@
     "战场_领取完毕": {
         "recognition": "DirectHit",
         "action": "DoNothing",
-        "next": "战场_2_出战"
+        "next": "战场_2_出战",
+        "post_delay": 10000
     },
     "战场_2_出战": {
         "recognition": "DirectHit",
@@ -182,14 +183,14 @@
         "recognition": "OCR",
         "expected": "获得战利品",
         "roi": [
-            400,
-            490,
-            400,
-            90
+            480,
+            435,
+            200,
+            50
         ],
-        "timeout": 600000,
         "action": "DoNothing",
-        "next": "战场_2_结算下一步"
+        "next": "战场_2_结算下一步",
+        "post_delay": 5000
     },
     "战场_2_结算下一步": {
         "recognition": "DirectHit",
@@ -227,7 +228,8 @@
     "战场_2_领取完毕": {
         "recognition": "DirectHit",
         "action": "DoNothing",
-        "next": "战场_返回主界面"
+        "next": "战场_返回主界面",
+        "post_delay": 10000
     },
     "战场_返回主界面": {
         "recognition": "DirectHit",

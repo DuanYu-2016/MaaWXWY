@@ -17,7 +17,7 @@
             84
         ],
         "action": "DoNothing",
-        "next": "幻境_活动横幅起点"
+        "next": "幻境_进活动"
     },
     "幻境_活动横幅起点": {
         "recognition": "DirectHit",
@@ -165,7 +165,7 @@
         ],
         "post_delay": 1000,
         "next": "幻境_1关_加载闸门",
-        "timeout": 600000
+        "timeout": 60000
     },
     "幻境_1关_加载闸门": {
         "recognition": "OCR",
@@ -177,7 +177,8 @@
             80
         ],
         "action": "DoNothing",
-        "next": "幻境_1关_右移"
+        "next": "幻境_1关_右移",
+        "post_delay": 5000
     },
     "幻境_1关_右移": {
         "recognition": "DirectHit",
@@ -201,9 +202,9 @@
             300,
             60
         ],
-        "timeout": 600000,
         "action": "DoNothing",
-        "next": "幻境_1关_结算下一步"
+        "next": "幻境_1关_结算下一步",
+        "post_delay": 5000
     },
     "幻境_1关_结算下一步": {
         "recognition": "DirectHit",
@@ -214,7 +215,7 @@
             1,
             1
         ],
-        "post_delay": 1000,
+        "post_delay": 11000,
         "next": "幻境_1关_选下一关"
     },
     "幻境_1关_选下一关": {
@@ -355,7 +356,7 @@
         ],
         "post_delay": 1000,
         "next": "幻境_2关_加载闸门",
-        "timeout": 600000
+        "timeout": 60000
     },
     "幻境_2关_加载闸门": {
         "recognition": "OCR",
@@ -367,7 +368,8 @@
             80
         ],
         "action": "DoNothing",
-        "next": "幻境_2关_右移"
+        "next": "幻境_2关_右移",
+        "post_delay": 5000
     },
     "幻境_2关_右移": {
         "recognition": "DirectHit",
@@ -391,9 +393,9 @@
             300,
             60
         ],
-        "timeout": 600000,
         "action": "DoNothing",
-        "next": "幻境_2关_结算下一步"
+        "next": "幻境_2关_结算下一步",
+        "post_delay": 5000
     },
     "幻境_2关_结算下一步": {
         "recognition": "DirectHit",
@@ -404,7 +406,7 @@
             1,
             1
         ],
-        "post_delay": 1000,
+        "post_delay": 11000,
         "next": "幻境_2关_选下一关"
     },
     "幻境_切下一个活动": {
@@ -569,7 +571,7 @@
         ],
         "post_delay": 1000,
         "next": "幻境_3关_加载闸门",
-        "timeout": 600000
+        "timeout": 60000
     },
     "幻境_3关_加载闸门": {
         "recognition": "OCR",
@@ -581,7 +583,8 @@
             80
         ],
         "action": "DoNothing",
-        "next": "幻境_3关_右移"
+        "next": "幻境_3关_右移",
+        "post_delay": 5000
     },
     "幻境_3关_右移": {
         "recognition": "DirectHit",
@@ -605,9 +608,9 @@
             300,
             60
         ],
-        "timeout": 600000,
         "action": "DoNothing",
-        "next": "幻境_3关_结算下一步"
+        "next": "幻境_3关_结算下一步",
+        "post_delay": 5000
     },
     "幻境_3关_结算下一步": {
         "recognition": "DirectHit",
@@ -618,7 +621,7 @@
             1,
             1
         ],
-        "post_delay": 1000,
+        "post_delay": 11000,
         "next": "幻境_3关_选下一关"
     },
     "幻境_3关_选下一关": {
@@ -759,7 +762,7 @@
         ],
         "post_delay": 1000,
         "next": "幻境_4关_加载闸门",
-        "timeout": 600000
+        "timeout": 60000
     },
     "幻境_4关_加载闸门": {
         "recognition": "OCR",
@@ -771,7 +774,8 @@
             80
         ],
         "action": "DoNothing",
-        "next": "幻境_4关_右移"
+        "next": "幻境_4关_右移",
+        "post_delay": 5000
     },
     "幻境_4关_右移": {
         "recognition": "DirectHit",
@@ -795,9 +799,9 @@
             300,
             60
         ],
-        "timeout": 600000,
         "action": "DoNothing",
-        "next": "幻境_4关_结算下一步"
+        "next": "幻境_4关_结算下一步",
+        "post_delay": 5000
     },
     "幻境_4关_结算下一步": {
         "recognition": "DirectHit",
@@ -808,7 +812,7 @@
             1,
             1
         ],
-        "post_delay": 1000,
+        "post_delay": 11000,
         "next": "幻境_4关_选下一关"
     },
     "幻境_4关_选下一关": {
@@ -949,7 +953,7 @@
         ],
         "post_delay": 1000,
         "next": "幻境_5关_加载闸门",
-        "timeout": 600000
+        "timeout": 60000
     },
     "幻境_5关_加载闸门": {
         "recognition": "OCR",
@@ -961,7 +965,8 @@
             80
         ],
         "action": "DoNothing",
-        "next": "幻境_5关_右移"
+        "next": "幻境_5关_右移",
+        "post_delay": 5000
     },
     "幻境_5关_右移": {
         "recognition": "DirectHit",
@@ -985,9 +990,9 @@
             300,
             60
         ],
-        "timeout": 600000,
         "action": "DoNothing",
-        "next": "幻境_5关_结算下一步"
+        "next": "幻境_5关_结算下一步",
+        "post_delay": 5000
     },
     "幻境_5关_结算下一步": {
         "recognition": "DirectHit",
@@ -998,7 +1003,7 @@
             1,
             1
         ],
-        "post_delay": 1000,
+        "post_delay": 11000,
         "next": "幻境_5关_选下一关"
     },
     "幻境_5关_选下一关": {
@@ -1151,7 +1156,7 @@
         ],
         "post_delay": 1000,
         "next": "幻境_6关_加载闸门",
-        "timeout": 600000
+        "timeout": 60000
     },
     "幻境_6关_加载闸门": {
         "recognition": "OCR",
@@ -1163,7 +1168,8 @@
             80
         ],
         "action": "DoNothing",
-        "next": "幻境_6关_右移"
+        "next": "幻境_6关_右移",
+        "post_delay": 5000
     },
     "幻境_6关_右移": {
         "recognition": "DirectHit",
@@ -1187,9 +1193,9 @@
             300,
             60
         ],
-        "timeout": 600000,
         "action": "DoNothing",
-        "next": "幻境_6关_结算下一步"
+        "next": "幻境_6关_结算下一步",
+        "post_delay": 5000
     },
     "幻境_6关_结算下一步": {
         "recognition": "DirectHit",
@@ -1200,7 +1206,7 @@
             1,
             1
         ],
-        "post_delay": 1000,
+        "post_delay": 11000,
         "next": "幻境_6关_选下一关"
     },
     "幻境_6关_选下一关": {
@@ -1341,7 +1347,7 @@
         ],
         "post_delay": 1000,
         "next": "幻境_7关_加载闸门",
-        "timeout": 600000
+        "timeout": 60000
     },
     "幻境_7关_加载闸门": {
         "recognition": "OCR",
@@ -1353,7 +1359,8 @@
             80
         ],
         "action": "DoNothing",
-        "next": "幻境_7关_右移"
+        "next": "幻境_7关_右移",
+        "post_delay": 5000
     },
     "幻境_7关_右移": {
         "recognition": "DirectHit",
@@ -1377,9 +1384,9 @@
             300,
             60
         ],
-        "timeout": 600000,
         "action": "DoNothing",
-        "next": "幻境_7关_结算下一步"
+        "next": "幻境_7关_结算下一步",
+        "post_delay": 5000
     },
     "幻境_7关_结算下一步": {
         "recognition": "DirectHit",
@@ -1390,7 +1397,7 @@
             1,
             1
         ],
-        "post_delay": 1000,
+        "post_delay": 11000,
         "next": "幻境_7关_选下一关"
     },
     "幻境_7关_选下一关": {
@@ -1531,7 +1538,7 @@
         ],
         "post_delay": 1000,
         "next": "幻境_8关_加载闸门",
-        "timeout": 600000
+        "timeout": 60000
     },
     "幻境_8关_加载闸门": {
         "recognition": "OCR",
@@ -1543,7 +1550,8 @@
             80
         ],
         "action": "DoNothing",
-        "next": "幻境_8关_右移"
+        "next": "幻境_8关_右移",
+        "post_delay": 5000
     },
     "幻境_8关_右移": {
         "recognition": "DirectHit",
@@ -1567,9 +1575,9 @@
             300,
             60
         ],
-        "timeout": 600000,
         "action": "DoNothing",
-        "next": "幻境_8关_结算下一步"
+        "next": "幻境_8关_结算下一步",
+        "post_delay": 5000
     },
     "幻境_8关_结算下一步": {
         "recognition": "DirectHit",
@@ -1580,12 +1588,25 @@
             1,
             1
         ],
-        "post_delay": 1000,
+        "post_delay": 11000,
         "next": "幻境_返回主界面"
     },
     "幻境_返回主界面": {
         "recognition": "DirectHit",
         "action": "ClickKey",
         "key": 4
+    },
+    "幻境_进活动": {
+        "recognition": "OCR",
+        "expected": "活动",
+        "roi": [
+            510,
+            628,
+            220,
+            84
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "幻境_活动横幅起点"
     }
 }
