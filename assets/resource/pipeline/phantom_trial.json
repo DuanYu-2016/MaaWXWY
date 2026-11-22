@@ -1,0 +1,1575 @@
+{
+    "幻境起点": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": [
+            "幻境_活动就位",
+            "幻境_右移一格"
+        ]
+    },
+    "幻境_活动就位": {
+        "recognition": "OCR",
+        "expected": "活动",
+        "roi": [
+            510,
+            628,
+            220,
+            84
+        ],
+        "action": "DoNothing",
+        "next": "幻境_活动横幅起点"
+    },
+    "幻境_活动横幅起点": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": [
+            "幻境_幻境试炼就位",
+            "幻境_切下一个活动"
+        ]
+    },
+    "幻境_幻境试炼就位": {
+        "recognition": "OCR",
+        "expected": "幻境试炼",
+        "roi": [
+            900,
+            30,
+            260,
+            110
+        ],
+        "action": "DoNothing",
+        "next": "幻境_1关_切史诗"
+    },
+    "幻境_1关_切史诗": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            465,
+            55,
+            1,
+            1
+        ],
+        "repeat": 2,
+        "repeat_delay": 600,
+        "post_delay": 1000,
+        "next": "幻境_1关_列表出战"
+    },
+    "幻境_1关_列表出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_1关_选编队"
+    },
+    "幻境_1关_选编队": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            40,
+            175,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_1关_祝福选择"
+    },
+    "幻境_1关_祝福选择": {
+        "recognition": "OCR",
+        "expected": "祝福选择",
+        "roi": [
+            160,
+            510,
+            210,
+            90
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "幻境_1关_祝福上滑"
+    },
+    "幻境_1关_祝福上滑": {
+        "recognition": "DirectHit",
+        "action": "Swipe",
+        "begin": [
+            660,
+            500
+        ],
+        "end": [
+            660,
+            200
+        ],
+        "duration": 400,
+        "post_delay": 500,
+        "next": "幻境_1关_选祝福"
+    },
+    "幻境_1关_选祝福": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            763,
+            465,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_1关_点参谋圈"
+    },
+    "幻境_1关_点参谋圈": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            333,
+            472,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_1关_选参谋"
+    },
+    "幻境_1关_选参谋": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            695,
+            230,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_1关_祝福确定"
+    },
+    "幻境_1关_祝福确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            540,
+            610,
+            200,
+            100
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "幻境_1关_编队出战"
+    },
+    "幻境_1关_编队出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_1关_加载闸门"
+    },
+    "幻境_1关_加载闸门": {
+        "recognition": "OCR",
+        "expected": "Speed",
+        "roi": [
+            1120,
+            10,
+            150,
+            80
+        ],
+        "action": "DoNothing",
+        "next": "幻境_1关_右移"
+    },
+    "幻境_1关_右移": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1225,
+            550,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_1关_结算闸门"
+    },
+    "幻境_1关_结算闸门": {
+        "recognition": "OCR",
+        "expected": "本次关卡积分",
+        "roi": [
+            400,
+            240,
+            300,
+            60
+        ],
+        "timeout": 600000,
+        "action": "DoNothing",
+        "next": "幻境_1关_结算下一步"
+    },
+    "幻境_1关_结算下一步": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1190,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_1关_选下一关"
+    },
+    "幻境_1关_选下一关": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            980,
+            530,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_2关_切史诗"
+    },
+    "幻境_2关_切史诗": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            465,
+            55,
+            1,
+            1
+        ],
+        "repeat": 2,
+        "repeat_delay": 600,
+        "post_delay": 1000,
+        "next": "幻境_2关_列表出战"
+    },
+    "幻境_2关_列表出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_2关_选编队"
+    },
+    "幻境_2关_选编队": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            40,
+            265,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_2关_祝福选择"
+    },
+    "幻境_2关_祝福选择": {
+        "recognition": "OCR",
+        "expected": "祝福选择",
+        "roi": [
+            160,
+            510,
+            210,
+            90
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "幻境_2关_祝福上滑"
+    },
+    "幻境_2关_祝福上滑": {
+        "recognition": "DirectHit",
+        "action": "Swipe",
+        "begin": [
+            660,
+            500
+        ],
+        "end": [
+            660,
+            200
+        ],
+        "duration": 400,
+        "post_delay": 500,
+        "next": "幻境_2关_选祝福"
+    },
+    "幻境_2关_选祝福": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            763,
+            465,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_2关_点参谋圈"
+    },
+    "幻境_2关_点参谋圈": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            333,
+            472,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_2关_选参谋"
+    },
+    "幻境_2关_选参谋": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            695,
+            230,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_2关_祝福确定"
+    },
+    "幻境_2关_祝福确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            540,
+            610,
+            200,
+            100
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "幻境_2关_编队出战"
+    },
+    "幻境_2关_编队出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_2关_加载闸门"
+    },
+    "幻境_2关_加载闸门": {
+        "recognition": "OCR",
+        "expected": "Speed",
+        "roi": [
+            1120,
+            10,
+            150,
+            80
+        ],
+        "action": "DoNothing",
+        "next": "幻境_2关_右移"
+    },
+    "幻境_2关_右移": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1225,
+            550,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_2关_结算闸门"
+    },
+    "幻境_2关_结算闸门": {
+        "recognition": "OCR",
+        "expected": "本次关卡积分",
+        "roi": [
+            400,
+            240,
+            300,
+            60
+        ],
+        "timeout": 600000,
+        "action": "DoNothing",
+        "next": "幻境_2关_结算下一步"
+    },
+    "幻境_2关_结算下一步": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1190,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_2关_选下一关"
+    },
+    "幻境_切下一个活动": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1190,
+            80,
+            1,
+            1
+        ],
+        "post_delay": 800,
+        "next": "幻境_活动横幅起点"
+    },
+    "幻境_右移一格": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            815,
+            665,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境起点"
+    },
+    "幻境_2关_选下一关": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            995,
+            520,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_3关_切史诗"
+    },
+    "幻境_3关_切史诗": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            465,
+            55,
+            1,
+            1
+        ],
+        "repeat": 2,
+        "repeat_delay": 600,
+        "post_delay": 1000,
+        "next": "幻境_3关_列表出战"
+    },
+    "幻境_3关_列表出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_3关_选编队"
+    },
+    "幻境_3关_选编队": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            40,
+            325,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_3关_祝福选择"
+    },
+    "幻境_3关_祝福选择": {
+        "recognition": "OCR",
+        "expected": "祝福选择",
+        "roi": [
+            160,
+            510,
+            210,
+            90
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "幻境_3关_祝福上滑"
+    },
+    "幻境_3关_祝福上滑": {
+        "recognition": "DirectHit",
+        "action": "Swipe",
+        "begin": [
+            660,
+            500
+        ],
+        "end": [
+            660,
+            200
+        ],
+        "duration": 400,
+        "post_delay": 500,
+        "next": "幻境_3关_选祝福"
+    },
+    "幻境_3关_选祝福": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            763,
+            465,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_3关_点参谋圈"
+    },
+    "幻境_3关_点参谋圈": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            333,
+            472,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_3关_选参谋"
+    },
+    "幻境_3关_选参谋": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            695,
+            230,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_3关_祝福确定"
+    },
+    "幻境_3关_祝福确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            540,
+            610,
+            200,
+            100
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "幻境_3关_编队出战"
+    },
+    "幻境_3关_编队出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_3关_加载闸门"
+    },
+    "幻境_3关_加载闸门": {
+        "recognition": "OCR",
+        "expected": "Speed",
+        "roi": [
+            1120,
+            10,
+            150,
+            80
+        ],
+        "action": "DoNothing",
+        "next": "幻境_3关_右移"
+    },
+    "幻境_3关_右移": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1225,
+            550,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_3关_结算闸门"
+    },
+    "幻境_3关_结算闸门": {
+        "recognition": "OCR",
+        "expected": "本次关卡积分",
+        "roi": [
+            400,
+            240,
+            300,
+            60
+        ],
+        "timeout": 600000,
+        "action": "DoNothing",
+        "next": "幻境_3关_结算下一步"
+    },
+    "幻境_3关_结算下一步": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1190,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_3关_选下一关"
+    },
+    "幻境_3关_选下一关": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            990,
+            515,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_4关_切史诗"
+    },
+    "幻境_4关_切史诗": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            465,
+            55,
+            1,
+            1
+        ],
+        "repeat": 2,
+        "repeat_delay": 600,
+        "post_delay": 1000,
+        "next": "幻境_4关_列表出战"
+    },
+    "幻境_4关_列表出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_4关_选编队"
+    },
+    "幻境_4关_选编队": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            40,
+            390,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_4关_祝福选择"
+    },
+    "幻境_4关_祝福选择": {
+        "recognition": "OCR",
+        "expected": "祝福选择",
+        "roi": [
+            160,
+            510,
+            210,
+            90
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "幻境_4关_祝福上滑"
+    },
+    "幻境_4关_祝福上滑": {
+        "recognition": "DirectHit",
+        "action": "Swipe",
+        "begin": [
+            660,
+            500
+        ],
+        "end": [
+            660,
+            200
+        ],
+        "duration": 400,
+        "post_delay": 500,
+        "next": "幻境_4关_选祝福"
+    },
+    "幻境_4关_选祝福": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            763,
+            465,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_4关_点参谋圈"
+    },
+    "幻境_4关_点参谋圈": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            333,
+            472,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_4关_选参谋"
+    },
+    "幻境_4关_选参谋": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            695,
+            230,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_4关_祝福确定"
+    },
+    "幻境_4关_祝福确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            540,
+            610,
+            200,
+            100
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "幻境_4关_编队出战"
+    },
+    "幻境_4关_编队出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_4关_加载闸门"
+    },
+    "幻境_4关_加载闸门": {
+        "recognition": "OCR",
+        "expected": "Speed",
+        "roi": [
+            1120,
+            10,
+            150,
+            80
+        ],
+        "action": "DoNothing",
+        "next": "幻境_4关_右移"
+    },
+    "幻境_4关_右移": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1225,
+            550,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_4关_结算闸门"
+    },
+    "幻境_4关_结算闸门": {
+        "recognition": "OCR",
+        "expected": "本次关卡积分",
+        "roi": [
+            400,
+            240,
+            300,
+            60
+        ],
+        "timeout": 600000,
+        "action": "DoNothing",
+        "next": "幻境_4关_结算下一步"
+    },
+    "幻境_4关_结算下一步": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1190,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_4关_选下一关"
+    },
+    "幻境_4关_选下一关": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            995,
+            520,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_5关_切史诗"
+    },
+    "幻境_5关_切史诗": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            465,
+            55,
+            1,
+            1
+        ],
+        "repeat": 2,
+        "repeat_delay": 600,
+        "post_delay": 1000,
+        "next": "幻境_5关_列表出战"
+    },
+    "幻境_5关_列表出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_5关_选编队"
+    },
+    "幻境_5关_选编队": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            40,
+            453,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_5关_祝福选择"
+    },
+    "幻境_5关_祝福选择": {
+        "recognition": "OCR",
+        "expected": "祝福选择",
+        "roi": [
+            160,
+            510,
+            210,
+            90
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "幻境_5关_祝福上滑"
+    },
+    "幻境_5关_祝福上滑": {
+        "recognition": "DirectHit",
+        "action": "Swipe",
+        "begin": [
+            660,
+            500
+        ],
+        "end": [
+            660,
+            200
+        ],
+        "duration": 400,
+        "post_delay": 500,
+        "next": "幻境_5关_选祝福"
+    },
+    "幻境_5关_选祝福": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            763,
+            465,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_5关_点参谋圈"
+    },
+    "幻境_5关_点参谋圈": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            333,
+            472,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_5关_选参谋"
+    },
+    "幻境_5关_选参谋": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            695,
+            230,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_5关_祝福确定"
+    },
+    "幻境_5关_祝福确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            540,
+            610,
+            200,
+            100
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "幻境_5关_编队出战"
+    },
+    "幻境_5关_编队出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_5关_加载闸门"
+    },
+    "幻境_5关_加载闸门": {
+        "recognition": "OCR",
+        "expected": "Speed",
+        "roi": [
+            1120,
+            10,
+            150,
+            80
+        ],
+        "action": "DoNothing",
+        "next": "幻境_5关_右移"
+    },
+    "幻境_5关_右移": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1225,
+            550,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_5关_结算闸门"
+    },
+    "幻境_5关_结算闸门": {
+        "recognition": "OCR",
+        "expected": "本次关卡积分",
+        "roi": [
+            400,
+            240,
+            300,
+            60
+        ],
+        "timeout": 600000,
+        "action": "DoNothing",
+        "next": "幻境_5关_结算下一步"
+    },
+    "幻境_5关_结算下一步": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1190,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_5关_选下一关"
+    },
+    "幻境_5关_选下一关": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1000,
+            520,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_6关_切史诗"
+    },
+    "幻境_6关_切史诗": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            465,
+            55,
+            1,
+            1
+        ],
+        "repeat": 2,
+        "repeat_delay": 600,
+        "post_delay": 1000,
+        "next": "幻境_6关_列表出战"
+    },
+    "幻境_6关_列表出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_6关_翻页"
+    },
+    "幻境_6关_翻页": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            40,
+            520,
+            1,
+            1
+        ],
+        "post_delay": 800,
+        "next": "幻境_6关_选编队"
+    },
+    "幻境_6关_选编队": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            40,
+            205,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_6关_祝福选择"
+    },
+    "幻境_6关_祝福选择": {
+        "recognition": "OCR",
+        "expected": "祝福选择",
+        "roi": [
+            160,
+            510,
+            210,
+            90
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "幻境_6关_祝福上滑"
+    },
+    "幻境_6关_祝福上滑": {
+        "recognition": "DirectHit",
+        "action": "Swipe",
+        "begin": [
+            660,
+            500
+        ],
+        "end": [
+            660,
+            200
+        ],
+        "duration": 400,
+        "post_delay": 500,
+        "next": "幻境_6关_选祝福"
+    },
+    "幻境_6关_选祝福": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            763,
+            465,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_6关_点参谋圈"
+    },
+    "幻境_6关_点参谋圈": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            333,
+            472,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_6关_选参谋"
+    },
+    "幻境_6关_选参谋": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            695,
+            230,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_6关_祝福确定"
+    },
+    "幻境_6关_祝福确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            540,
+            610,
+            200,
+            100
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "幻境_6关_编队出战"
+    },
+    "幻境_6关_编队出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_6关_加载闸门"
+    },
+    "幻境_6关_加载闸门": {
+        "recognition": "OCR",
+        "expected": "Speed",
+        "roi": [
+            1120,
+            10,
+            150,
+            80
+        ],
+        "action": "DoNothing",
+        "next": "幻境_6关_右移"
+    },
+    "幻境_6关_右移": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1225,
+            550,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_6关_结算闸门"
+    },
+    "幻境_6关_结算闸门": {
+        "recognition": "OCR",
+        "expected": "本次关卡积分",
+        "roi": [
+            400,
+            240,
+            300,
+            60
+        ],
+        "timeout": 600000,
+        "action": "DoNothing",
+        "next": "幻境_6关_结算下一步"
+    },
+    "幻境_6关_结算下一步": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1190,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_6关_选下一关"
+    },
+    "幻境_6关_选下一关": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            940,
+            520,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_7关_切史诗"
+    },
+    "幻境_7关_切史诗": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            465,
+            55,
+            1,
+            1
+        ],
+        "repeat": 2,
+        "repeat_delay": 600,
+        "post_delay": 1000,
+        "next": "幻境_7关_列表出战"
+    },
+    "幻境_7关_列表出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_7关_选编队"
+    },
+    "幻境_7关_选编队": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            40,
+            268,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_7关_祝福选择"
+    },
+    "幻境_7关_祝福选择": {
+        "recognition": "OCR",
+        "expected": "祝福选择",
+        "roi": [
+            160,
+            510,
+            210,
+            90
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "幻境_7关_祝福上滑"
+    },
+    "幻境_7关_祝福上滑": {
+        "recognition": "DirectHit",
+        "action": "Swipe",
+        "begin": [
+            660,
+            500
+        ],
+        "end": [
+            660,
+            200
+        ],
+        "duration": 400,
+        "post_delay": 500,
+        "next": "幻境_7关_选祝福"
+    },
+    "幻境_7关_选祝福": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            763,
+            465,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_7关_点参谋圈"
+    },
+    "幻境_7关_点参谋圈": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            333,
+            472,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_7关_选参谋"
+    },
+    "幻境_7关_选参谋": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            695,
+            230,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_7关_祝福确定"
+    },
+    "幻境_7关_祝福确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            540,
+            610,
+            200,
+            100
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "幻境_7关_编队出战"
+    },
+    "幻境_7关_编队出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_7关_加载闸门"
+    },
+    "幻境_7关_加载闸门": {
+        "recognition": "OCR",
+        "expected": "Speed",
+        "roi": [
+            1120,
+            10,
+            150,
+            80
+        ],
+        "action": "DoNothing",
+        "next": "幻境_7关_右移"
+    },
+    "幻境_7关_右移": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1225,
+            550,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_7关_结算闸门"
+    },
+    "幻境_7关_结算闸门": {
+        "recognition": "OCR",
+        "expected": "本次关卡积分",
+        "roi": [
+            400,
+            240,
+            300,
+            60
+        ],
+        "timeout": 600000,
+        "action": "DoNothing",
+        "next": "幻境_7关_结算下一步"
+    },
+    "幻境_7关_结算下一步": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1190,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_7关_选下一关"
+    },
+    "幻境_7关_选下一关": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1000,
+            520,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_8关_切史诗"
+    },
+    "幻境_8关_切史诗": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            465,
+            55,
+            1,
+            1
+        ],
+        "repeat": 2,
+        "repeat_delay": 600,
+        "post_delay": 1000,
+        "next": "幻境_8关_列表出战"
+    },
+    "幻境_8关_列表出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_8关_选编队"
+    },
+    "幻境_8关_选编队": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            40,
+            325,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_8关_祝福选择"
+    },
+    "幻境_8关_祝福选择": {
+        "recognition": "OCR",
+        "expected": "祝福选择",
+        "roi": [
+            160,
+            510,
+            210,
+            90
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "幻境_8关_祝福上滑"
+    },
+    "幻境_8关_祝福上滑": {
+        "recognition": "DirectHit",
+        "action": "Swipe",
+        "begin": [
+            660,
+            500
+        ],
+        "end": [
+            660,
+            200
+        ],
+        "duration": 400,
+        "post_delay": 500,
+        "next": "幻境_8关_选祝福"
+    },
+    "幻境_8关_选祝福": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            763,
+            465,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_8关_点参谋圈"
+    },
+    "幻境_8关_点参谋圈": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            333,
+            472,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_8关_选参谋"
+    },
+    "幻境_8关_选参谋": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            695,
+            230,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "幻境_8关_祝福确定"
+    },
+    "幻境_8关_祝福确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "roi": [
+            540,
+            610,
+            200,
+            100
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "幻境_8关_编队出战"
+    },
+    "幻境_8关_编队出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_8关_加载闸门"
+    },
+    "幻境_8关_加载闸门": {
+        "recognition": "OCR",
+        "expected": "Speed",
+        "roi": [
+            1120,
+            10,
+            150,
+            80
+        ],
+        "action": "DoNothing",
+        "next": "幻境_8关_右移"
+    },
+    "幻境_8关_右移": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1225,
+            550,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_8关_结算闸门"
+    },
+    "幻境_8关_结算闸门": {
+        "recognition": "OCR",
+        "expected": "本次关卡积分",
+        "roi": [
+            400,
+            240,
+            300,
+            60
+        ],
+        "timeout": 600000,
+        "action": "DoNothing",
+        "next": "幻境_8关_结算下一步"
+    },
+    "幻境_8关_结算下一步": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1190,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "幻境_返回主界面"
+    },
+    "幻境_返回主界面": {
+        "recognition": "DirectHit",
+        "action": "ClickKey",
+        "key": 4
+    }
+}

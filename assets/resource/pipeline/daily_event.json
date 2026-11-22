@@ -1,0 +1,194 @@
+{
+    "限时活动起点": {
+        "recognition": "OCR",
+        "expected": "任务",
+        "roi": [30, 265, 100, 110],
+        "action": "Click",
+        "post_delay": 500,
+        "next": "每日限时活动_点任务"
+    },
+    "每日限时活动_点任务": {
+        "recognition": "OCR",
+        "expected": "每日限时活动",
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "每日限时活动_列表起点"
+    },
+    "每日限时活动_列表起点": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": ["每日限时活动_特级就位", "每日限时活动_上滑"]
+    },
+    "每日限时活动_特级就位": {
+        "recognition": "OCR",
+        "expected": "关卡特级",
+        "roi": [600, 275, 420, 110],
+        "action": "DoNothing",
+        "next": "每日限时活动_上翻一格"
+    },
+    "每日限时活动_上翻一格": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [978, 197, 1, 1],
+        "post_delay": 800,
+        "next": "每日限时活动_出战第一关"
+    },
+    "每日限时活动_出战第一关": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [1217, 335, 1, 1],
+        "post_delay": 1000,
+        "next": "每日限时活动_编队起点"
+    },
+    "每日限时活动_编队起点": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": ["每日限时活动_选10号", "每日限时活动_编队翻页"]
+    },
+    "每日限时活动_选10号": {
+        "recognition": "OCR",
+        "expected": "10",
+        "roi": [20, 400, 55, 90],
+        "action": "Click",
+        "post_delay": 500,
+        "next": "每日限时活动_编队出战"
+    },
+    "每日限时活动_编队出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [1217, 340, 1, 1],
+        "post_delay": 2000,
+        "next": "每日限时活动_战斗加载闸门"
+    },
+    "每日限时活动_战斗加载闸门": {
+        "recognition": "OCR",
+        "expected": "Speed",
+        "roi": [1120, 10, 150, 80],
+        "action": "DoNothing",
+        "next": "每日限时活动_右移"
+    },
+    "每日限时活动_右移": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [1225, 550, 1, 1],
+        "post_delay": 1000,
+        "next": "每日限时活动_结算闸门"
+    },
+    "每日限时活动_结算闸门": {
+        "recognition": "OCR",
+        "expected": "获得战利品",
+        "roi": [450, 400, 380, 80],
+        "timeout": 600000,
+        "action": "DoNothing",
+        "next": "每日限时活动_结算下一步"
+    },
+    "每日限时活动_结算下一步": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [1189, 360, 1, 1],
+        "post_delay": 1000,
+        "next": "每日限时活动_再翻三格"
+    },
+    "每日限时活动_再翻三格": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [978, 197, 1, 1],
+        "repeat": 3,
+        "repeat_delay": 800,
+        "post_delay": 1000,
+        "next": "每日限时活动_出战第二关"
+    },
+    "每日限时活动_出战第二关": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [1217, 335, 1, 1],
+        "post_delay": 1000,
+        "next": "每日限时活动_编队出战第二关"
+    },
+    "每日限时活动_编队出战第二关": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [1217, 340, 1, 1],
+        "post_delay": 2000,
+        "next": "每日限时活动_战斗加载闸门二"
+    },
+    "每日限时活动_战斗加载闸门二": {
+        "recognition": "OCR",
+        "expected": "Speed",
+        "roi": [1120, 10, 150, 80],
+        "action": "DoNothing",
+        "next": "每日限时活动_右移二"
+    },
+    "每日限时活动_右移二": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [1225, 550, 1, 1],
+        "post_delay": 1000,
+        "next": "每日限时活动_结算闸门二"
+    },
+    "每日限时活动_结算闸门二": {
+        "recognition": "OCR",
+        "expected": "获得战利品",
+        "roi": [450, 400, 380, 80],
+        "timeout": 600000,
+        "action": "DoNothing",
+        "next": "每日限时活动_结算下一步二"
+    },
+    "每日限时活动_结算下一步二": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [1189, 360, 1, 1],
+        "post_delay": 1000,
+        "next": "每日限时活动_返回主界面一"
+    },
+    "每日限时活动_返回主界面一": {
+        "recognition": "DirectHit",
+        "action": "ClickKey",
+        "key": 4,
+        "post_delay": 1000,
+        "next": "每日限时活动_点任务领奖"
+    },
+    "每日限时活动_点任务领奖": {
+        "recognition": "OCR",
+        "expected": "任务",
+        "roi": [30, 265, 100, 110],
+        "action": "Click",
+        "post_delay": 500,
+        "next": "每日限时活动_点每日奖励"
+    },
+    "每日限时活动_点每日奖励": {
+        "recognition": "OCR",
+        "expected": "每日限时活动",
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "每日限时活动_领奖"
+    },
+    "每日限时活动_领奖": {
+        "recognition": "OCR",
+        "expected": "领取",
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "每日限时活动_返回主界面二"
+    },
+    "每日限时活动_返回主界面二": {
+        "recognition": "DirectHit",
+        "action": "ClickKey",
+        "key": 4
+    },
+    "每日限时活动_编队翻页": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [45, 532, 1, 1],
+        "post_delay": 800,
+        "next": "每日限时活动_编队起点"
+    },
+    "每日限时活动_上滑": {
+        "recognition": "DirectHit",
+        "action": "Swipe",
+        "begin": [880, 480],
+        "end": [880, 260],
+        "duration": 400,
+        "post_delay": 500,
+        "next": "每日限时活动_列表起点"
+    }
+}

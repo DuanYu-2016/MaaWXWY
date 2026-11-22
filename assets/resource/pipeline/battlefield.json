@@ -1,0 +1,235 @@
+{
+    "战场起点": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": [
+            "战场_战场就位",
+            "战场_右移一格"
+        ]
+    },
+    "战场_战场就位": {
+        "recognition": "OCR",
+        "expected": "战场",
+        "roi": [
+            510,
+            628,
+            220,
+            84
+        ],
+        "action": "DoNothing",
+        "next": "战场_进战场"
+    },
+    "战场_进战场": {
+        "recognition": "OCR",
+        "expected": "战场",
+        "roi": [
+            510,
+            628,
+            220,
+            84
+        ],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "战场_出战"
+    },
+    "战场_出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "战场_编队起点"
+    },
+    "战场_右移一格": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            815,
+            665,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "战场起点"
+    },
+    "战场_编队起点": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": [
+            "战场_选3号",
+            "战场_翻页"
+        ]
+    },
+    "战场_选3号": {
+        "recognition": "OCR",
+        "expected": "3",
+        "roi": [
+            15,
+            285,
+            55,
+            70
+        ],
+        "action": "Click",
+        "post_delay": 500,
+        "next": "战场_编队出战"
+    },
+    "战场_翻页": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            40,
+            520,
+            1,
+            1
+        ],
+        "post_delay": 800,
+        "next": "战场_编队起点"
+    },
+    "战场_编队出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "战场_结算闸门"
+    },
+    "战场_结算闸门": {
+        "recognition": "OCR",
+        "expected": "获得战利品",
+        "roi": [
+            400,
+            490,
+            400,
+            90
+        ],
+        "timeout": 600000,
+        "action": "DoNothing",
+        "next": "战场_结算下一步"
+    },
+    "战场_结算下一步": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1180,
+            350,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "战场_领取起点"
+    },
+    "战场_领取起点": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": [
+            "战场_领一个",
+            "战场_领取完毕"
+        ]
+    },
+    "战场_领一个": {
+        "recognition": "OCR",
+        "expected": "领取",
+        "roi": [
+            400,
+            600,
+            480,
+            120
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": "战场_领取起点"
+    },
+    "战场_领取完毕": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": "战场_2_出战"
+    },
+    "战场_2_出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "战场_2_编队出战"
+    },
+    "战场_2_编队出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "战场_2_结算闸门"
+    },
+    "战场_2_结算闸门": {
+        "recognition": "OCR",
+        "expected": "获得战利品",
+        "roi": [
+            400,
+            490,
+            400,
+            90
+        ],
+        "timeout": 600000,
+        "action": "DoNothing",
+        "next": "战场_2_结算下一步"
+    },
+    "战场_2_结算下一步": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1180,
+            350,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "战场_2_领取起点"
+    },
+    "战场_2_领取起点": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": [
+            "战场_2_领一个",
+            "战场_2_领取完毕"
+        ]
+    },
+    "战场_2_领一个": {
+        "recognition": "OCR",
+        "expected": "领取",
+        "roi": [
+            400,
+            600,
+            480,
+            120
+        ],
+        "action": "Click",
+        "post_delay": 2000,
+        "next": "战场_2_领取起点"
+    },
+    "战场_2_领取完毕": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": "战场_返回主界面"
+    },
+    "战场_返回主界面": {
+        "recognition": "DirectHit",
+        "action": "ClickKey",
+        "key": 4
+    }
+}

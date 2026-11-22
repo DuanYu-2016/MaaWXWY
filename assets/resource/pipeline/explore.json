@@ -1,0 +1,193 @@
+{
+    "探索起点": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": ["探索已就位", "右移一格"]
+    },
+    "探索已就位": {
+        "recognition": "OCR",
+        "expected": "探索",
+        "roi": [510, 628, 220, 84],
+        "action": "DoNothing",
+        "next": "进入探索"
+    },
+    "进入探索": {
+        "recognition": "OCR",
+        "expected": "探索",
+        "roi": [510, 628, 220, 84],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "探索建筑"
+    },
+    "探索建筑": {
+        "recognition": "OCR",
+        "expected": "探索建筑",
+        "roi": [30, 620, 190, 70],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "篝火"
+    },
+    "篝火": {
+        "recognition": "OCR",
+        "expected": "篝火",
+        "roi": [590, 545, 130, 115],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "一键领取"
+    },
+    "一键领取": {
+        "recognition": "OCR",
+        "expected": "一键领取",
+        "roi": [840, 105, 180, 75],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "领取"
+    },
+    "领取": {
+        "recognition": "OCR",
+        "expected": "领取",
+        "roi": [0, 360, 1280, 360],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "任务4_点击"
+    },
+    "任务4_点击": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [596, 636, 1, 1],
+        "post_delay": 1000,
+        "next": "任务4_快速编队"
+    },
+    "任务4_快速编队": {
+        "recognition": "OCR",
+        "expected": "快速编队",
+        "roi": [910, 590, 140, 80],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "任务4_执行"
+    },
+    "任务4_执行": {
+        "recognition": "OCR",
+        "expected": "执行任务",
+        "roi": [1055, 590, 140, 80],
+        "action": "Click",
+        "post_delay": 3000,
+        "next": "任务4_返回"
+    },
+    "任务4_返回": {
+        "recognition": "DirectHit",
+        "action": "ClickKey",
+        "key": 4,
+        "post_delay": 1000,
+        "next": "任务1_点击"
+    },
+    "任务1_点击": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [580, 397, 1, 1],
+        "post_delay": 1000,
+        "next": "任务1_快速编队"
+    },
+    "任务1_快速编队": {
+        "recognition": "OCR",
+        "expected": "快速编队",
+        "roi": [910, 590, 140, 80],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "任务1_执行"
+    },
+    "任务1_执行": {
+        "recognition": "OCR",
+        "expected": "执行任务",
+        "roi": [1055, 590, 140, 80],
+        "action": "Click",
+        "post_delay": 3000,
+        "next": "任务1_返回"
+    },
+    "任务1_返回": {
+        "recognition": "DirectHit",
+        "action": "ClickKey",
+        "key": 4,
+        "post_delay": 1000,
+        "next": "任务2_点击"
+    },
+    "任务2_点击": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [590, 532, 1, 1],
+        "post_delay": 1000,
+        "next": "任务2_快速编队"
+    },
+    "任务2_快速编队": {
+        "recognition": "OCR",
+        "expected": "快速编队",
+        "roi": [910, 590, 140, 80],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "任务2_执行"
+    },
+    "任务2_执行": {
+        "recognition": "OCR",
+        "expected": "执行任务",
+        "roi": [1055, 590, 140, 80],
+        "action": "Click",
+        "post_delay": 3000,
+        "next": "任务2_返回"
+    },
+    "任务2_返回": {
+        "recognition": "DirectHit",
+        "action": "ClickKey",
+        "key": 4,
+        "post_delay": 1000,
+        "next": "任务3_点击"
+    },
+    "任务3_点击": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [648, 647, 1, 1],
+        "post_delay": 1000,
+        "next": "任务3_快速编队"
+    },
+    "任务3_快速编队": {
+        "recognition": "OCR",
+        "expected": "快速编队",
+        "roi": [910, 590, 140, 80],
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "任务3_执行"
+    },
+    "任务3_执行": {
+        "recognition": "OCR",
+        "expected": "执行任务",
+        "roi": [1055, 590, 140, 80],
+        "action": "Click",
+        "post_delay": 3000,
+        "next": "任务3_返回"
+    },
+    "任务3_返回": {
+        "recognition": "DirectHit",
+        "action": "ClickKey",
+        "key": 4,
+        "post_delay": 1000,
+        "next": "收尾返回一"
+    },
+    "收尾返回一": {
+        "recognition": "DirectHit",
+        "action": "ClickKey",
+        "key": 4,
+        "post_delay": 1000,
+        "next": "收尾返回二"
+    },
+    "收尾返回二": {
+        "recognition": "DirectHit",
+        "action": "ClickKey",
+        "key": 4
+    },
+    "右移一格": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [815, 665, 1, 1],
+        "post_delay": 500,
+        "next": "探索起点"
+    }
+}

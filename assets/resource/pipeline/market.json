@@ -1,0 +1,87 @@
+{
+    "市集起点": {
+        "recognition": "OCR",
+        "expected": "任务",
+        "roi": [30, 265, 100, 110],
+        "action": "Click",
+        "post_delay": 500,
+        "next": "市集购买_点任务"
+    },
+    "市集购买_点任务": {
+        "recognition": "OCR",
+        "expected": "市集购买",
+        "action": "Click",
+        "post_delay": 1000,
+        "next": "市集购买_上滑"
+    },
+    "市集购买_上滑": {
+        "recognition": "DirectHit",
+        "action": "Swipe",
+        "begin": [648, 610],
+        "end": [648, 60],
+        "duration": 400,
+        "post_delay": 1000,
+        "next": "市集购买_金色魂晶"
+    },
+    "市集购买_金色魂晶": {
+        "recognition": "OCR",
+        "expected": "金色记忆魂晶",
+        "action": "Click",
+        "post_delay": 500,
+        "next": "市集购买_金色确定"
+    },
+    "市集购买_金色确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "action": "Click",
+        "post_delay": 2000,
+        "next": "市集购买_黑色魂晶"
+    },
+    "市集购买_黑色魂晶": {
+        "recognition": "OCR",
+        "expected": "黑色记忆魂晶",
+        "action": "Click",
+        "post_delay": 500,
+        "next": "市集购买_黑色确定"
+    },
+    "市集购买_黑色确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "action": "Click",
+        "post_delay": 2000,
+        "next": "市集购买_白色魂晶"
+    },
+    "市集购买_白色魂晶": {
+        "recognition": "OCR",
+        "expected": "白色记忆魂晶",
+        "action": "Click",
+        "post_delay": 500,
+        "next": "市集购买_白色确定"
+    },
+    "市集购买_白色确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "action": "Click",
+        "post_delay": 2000,
+        "next": "市集购买_书签"
+    },
+    "市集购买_书签": {
+        "recognition": "OCR",
+        "expected": "万象赋魂书签",
+        "action": "Click",
+        "post_delay": 500,
+        "next": "市集购买_书签确定"
+    },
+    "市集购买_书签确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "action": "Click",
+        "post_delay": 2000,
+        "next": "市集购买_返回"
+    },
+    "市集购买_返回": {
+        "recognition": "DirectHit",
+        "action": "ClickKey",
+        "key": 4
+    }
+}

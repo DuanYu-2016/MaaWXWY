@@ -1,109 +1,60 @@
 {
-    // 本文件主要定义了通用 UI 的行为和显示内容
-    // 可参考文档和示例添加更多您需要的功能
-    // 文档：https://maafw.xyz/docs/3.3-ProjectInterfaceV2
-    // 示例：https://github.com/MaaXYZ/MaaFramework/blob/main/sample/interface.json
     "interface_version": 2,
-    "name": "MaaXXX",
-    "description": "这是一个使用 MaaFramework 创建的新项目。",
-    "contact": "QQ群: 123456789",
+    "name": "MaaWXWY",
+    "description": "万象物语自动化",
+    "contact": "",
     "license": "MIT",
-    "welcome": "首次使用！欢迎使用 MAA!",
-    // 填写项目地址和版本号可实现自动更新功能
-    "github": "https://github.com/MaaXYZ/MaaPracticeBoilerplate",
-    "version": "1.0.0",
-    // Mirror酱为第三方分发服务，新项目默认关闭
-    // 若有需要请联系 Mirror酱 开通，直接自行开启是无法使用的
-    // "mirrorchyan_rid": "MaaXXX",
-    // "mirrorchyan_multiplatform": true,
+    "welcome": "",
     "controller": [
         {
-            "name": "安卓端",
+            "name": "安卓模拟器",
             "type": "Adb",
-            "display_short_side": 720 // 默认缩放分辨率的短边长度
-        },
-        {
-            "name": "桌面端",
-            "type": "Win32",
-            "win32": {
-                "class_regex": ".*",
-                "window_regex": "Visual Studio",
-                // 截图及控制方式，请根据项目实际情况修改
-                // 文档: https://maafw.xyz/docs/2.4-ControlMethods
-                "screencap": "PrintWindow", // 截图方式
-                "mouse": "PostMessageWithCursorPos", // 鼠标控制方式
-                "keyboard": "PostMessageWithCursorPos" // 键盘控制方式
-            }
+            "display_short_side": 720
         }
     ],
     "resource": [
         {
-            "name": "官服",
+            "name": "默认",
             "path": [
                 "./resource"
-            ]
-        },
-        {
-            "name": "B 服",
-            "path": [
-                "./resource"
-                // "./resource_bilibili"
             ]
         }
     ],
-    // 可选的 agent 示例
-    // "agent": {
-    //     "child_exec": "python",
-    //     "child_args": [
-    //         "./agent/main.py"
-    //     ]
-    // },
     "task": [
         {
-            "name": "普通任务",
-            "entry": "MyTask1"
+            "name": "公会任务7+5",
+            "entry": "任务入口",
+            "doc": "从主界面进入任务面板→公会页，依次领取等级7、等级5公会任务，再领等级7奖励，返回主界面。"
         },
         {
-            "name": "选项任务",
-            "entry": "MyTask2",
-            "option": [
-                "任务选项1"
-            ]
+            "name": "探索",
+            "entry": "探索起点",
+            "doc": "从主界面切底栏到「探索」，进探索建筑→篝火，一键领取并领奖；按4-1-2-3依次接取四个任务并编队执行，最后两次返回主界面。"
         },
         {
-            "name": "参数任务",
-            "entry": "MyTask3",
-            "option": [
-                "任务选项1"
-            ],
-            "pipeline_override": {}
+            "name": "市集购买",
+            "entry": "市集起点",
+            "doc": "从主界面进任务面板，点「在市集购买一次」→市集神秘页，上滑后用OCR依次购买金/黑/白记忆魂晶与万象赋魂书签（各点道具+确定），返回主界面。"
         },
         {
-            "name": "自定义识别与动作示例",
-            "entry": "FindSmallestNumber"
+            "name": "结晶搜集",
+            "entry": "结晶起点",
+            "doc": "从主界面进任务面板→结晶搜集，上滑至灭级→速读→选9号编队执行→结算与溢出经验确认→返回；再进任务领结晶搜集奖励→返回主界面。"
+        },
+        {
+            "name": "每日限时活动",
+            "entry": "限时活动起点",
+            "doc": "从主界面进任务面板→每日限时活动，滑到关卡列表底部，完成两关（各选10号编队出战、右移、等结算），返回主界面领奖后返回。"
+        },
+        {
+            "name": "幻境试炼",
+            "entry": "幻境起点",
+            "doc": "从主界面切底栏到活动，横幅切到幻境试炼，切史诗模式，依次通关4-1至4-8共八关（每关选对应编队、祝福选择、出战、右移、等结算），最后返回主界面。"
+        },
+        {
+            "name": "战场",
+            "entry": "战场起点",
+            "doc": "从主界面切底栏到「战场」，进战场→出战→选3号编队→出战（不右移），等结算后逐个领取宝箱；回出战前页面后再出战一次（编队默认一致），等结算领奖，最后按返回键回主界面。"
         }
-    ],
-    "option": {
-        "任务选项1": {
-            "type": "select",
-            "cases": [
-                {
-                    "name": "文本1",
-                    "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本1"
-                        }
-                    }
-                },
-                {
-                    "name": "文本2",
-                    "pipeline_override": {
-                        "OcrTask": {
-                            "text": "文本2"
-                        }
-                    }
-                }
-            ]
-        }
-    }
+    ]
 }
