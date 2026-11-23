@@ -1,0 +1,213 @@
+{
+    "公会6起点": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            80,
+            330,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "公会6_点公会"
+    },
+    "公会6_点公会": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            154,
+            570,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "公会6_判断起点"
+    },
+    "公会6_判断起点": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": [
+            "公会6_已完成",
+            "公会6_点等级6"
+        ]
+    },
+    "公会6_已完成": {
+        "recognition": "OCR",
+        "expected": "施展破甲技能",
+        "action": "ClickKey",
+        "key": 4
+    },
+    "公会6_点等级6": {
+        "recognition": "OCR",
+        "expected": "等级6",
+        "action": "Click",
+        "post_delay": 500,
+        "next": "公会6_出战"
+    },
+    "公会6_出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            420,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "next": "公会6_编队起点"
+    },
+    "公会6_编队起点": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": [
+            "公会6_选10号",
+            "公会6_翻页"
+        ]
+    },
+    "公会6_选10号": {
+        "recognition": "OCR",
+        "expected": "10",
+        "roi": [
+            15,
+            285,
+            55,
+            70
+        ],
+        "action": "Click",
+        "post_delay": 500,
+        "next": "公会6_编队出战"
+    },
+    "公会6_翻页": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            40,
+            520,
+            1,
+            1
+        ],
+        "post_delay": 800,
+        "next": "公会6_编队起点"
+    },
+    "公会6_编队出战": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1217,
+            340,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "timeout": 60000,
+        "next": "公会6_加载闸门"
+    },
+    "公会6_加载闸门": {
+        "recognition": "OCR",
+        "expected": "Speed",
+        "roi": [
+            1120,
+            10,
+            150,
+            80
+        ],
+        "action": "DoNothing",
+        "post_delay": 5000,
+        "next": "公会6_右移"
+    },
+    "公会6_右移": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1041,
+            588,
+            1,
+            1
+        ],
+        "post_delay": 1000,
+        "timeout": 600000,
+        "next": "公会6_结算闸门"
+    },
+    "公会6_结算闸门": {
+        "recognition": "OCR",
+        "expected": "获得战利品",
+        "roi": [
+            480,
+            435,
+            200,
+            50
+        ],
+        "action": "DoNothing",
+        "post_delay": 5000,
+        "next": "公会6_结算下一步"
+    },
+    "公会6_结算下一步": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            1180,
+            350,
+            1,
+            1
+        ],
+        "post_delay": 11000,
+        "next": "公会6_返回主界面"
+    },
+    "公会6_返回主界面": {
+        "recognition": "DirectHit",
+        "action": "ClickKey",
+        "key": 4,
+        "post_delay": 1000,
+        "next": "公会6_再点任务"
+    },
+    "公会6_再点任务": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            80,
+            330,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "公会6_再点公会"
+    },
+    "公会6_再点公会": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            154,
+            570,
+            1,
+            1
+        ],
+        "post_delay": 500,
+        "next": "公会6_领奖点等级6"
+    },
+    "公会6_领奖点等级6": {
+        "recognition": "OCR",
+        "expected": "等级6",
+        "action": "Click",
+        "post_delay": 500,
+        "next": "公会6_领奖点领取"
+    },
+    "公会6_领奖点领取": {
+        "recognition": "OCR",
+        "expected": "领取",
+        "action": "Click",
+        "post_delay": 500,
+        "next": "公会6_领奖确定"
+    },
+    "公会6_领奖确定": {
+        "recognition": "OCR",
+        "expected": "确定",
+        "action": "Click",
+        "post_delay": 500,
+        "next": "公会6_结束返回"
+    },
+    "公会6_结束返回": {
+        "recognition": "DirectHit",
+        "action": "ClickKey",
+        "key": 4
+    }
+}

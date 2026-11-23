@@ -1,16 +1,15 @@
 {
     "结晶起点": {
-        "recognition": "OCR",
-        "expected": "任务",
-        "roi": [
-            30,
-            265,
-            100,
-            110
-        ],
         "action": "Click",
         "post_delay": 500,
-        "next": "结晶搜集_点任务"
+        "next": "结晶搜集_点任务",
+        "recognition": "DirectHit",
+        "target": [
+            80,
+            330,
+            1,
+            1
+        ]
     },
     "结晶搜集_点任务": {
         "recognition": "OCR",
@@ -111,17 +110,16 @@
         "next": "结晶搜集_点任务领奖"
     },
     "结晶搜集_点任务领奖": {
-        "recognition": "OCR",
-        "expected": "任务",
-        "roi": [
-            30,
-            265,
-            100,
-            110
-        ],
         "action": "Click",
         "post_delay": 500,
-        "next": "结晶搜集_点结晶奖励"
+        "next": "结晶搜集_点结晶奖励",
+        "recognition": "DirectHit",
+        "target": [
+            80,
+            330,
+            1,
+            1
+        ]
     },
     "结晶搜集_点结晶奖励": {
         "recognition": "OCR",

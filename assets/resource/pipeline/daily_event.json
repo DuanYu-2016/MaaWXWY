@@ -1,16 +1,15 @@
 {
     "限时活动起点": {
-        "recognition": "OCR",
-        "expected": "任务",
-        "roi": [
-            30,
-            265,
-            100,
-            110
-        ],
         "action": "Click",
         "post_delay": 500,
-        "next": "每日限时活动_点任务"
+        "next": "每日限时活动_点任务",
+        "recognition": "DirectHit",
+        "target": [
+            80,
+            330,
+            1,
+            1
+        ]
     },
     "每日限时活动_点任务": {
         "recognition": "OCR",
@@ -246,17 +245,16 @@
         "next": "每日限时活动_点任务领奖"
     },
     "每日限时活动_点任务领奖": {
-        "recognition": "OCR",
-        "expected": "任务",
-        "roi": [
-            30,
-            265,
-            100,
-            110
-        ],
         "action": "Click",
         "post_delay": 500,
-        "next": "每日限时活动_点每日奖励"
+        "next": "每日限时活动_点每日奖励",
+        "recognition": "DirectHit",
+        "target": [
+            80,
+            330,
+            1,
+            1
+        ]
     },
     "每日限时活动_点每日奖励": {
         "recognition": "OCR",

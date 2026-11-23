@@ -46,17 +46,16 @@
         "next": "篝火"
     },
     "篝火": {
-        "recognition": "OCR",
-        "expected": "篝火",
-        "roi": [
-            590,
-            545,
-            130,
-            115
-        ],
         "action": "Click",
         "post_delay": 1000,
-        "next": "一键领取"
+        "next": "一键领取",
+        "recognition": "DirectHit",
+        "target": [
+            760,
+            580,
+            1,
+            1
+        ]
     },
     "一键领取": {
         "recognition": "OCR",

@@ -1,16 +1,15 @@
 {
     "市集起点": {
-        "recognition": "OCR",
-        "expected": "任务",
-        "roi": [
-            30,
-            265,
-            100,
-            110
-        ],
         "action": "Click",
         "post_delay": 500,
-        "next": "市集购买_点任务"
+        "next": "市集购买_点任务",
+        "recognition": "DirectHit",
+        "target": [
+            80,
+            330,
+            1,
+            1
+        ]
     },
     "市集购买_点任务": {
         "recognition": "OCR",
