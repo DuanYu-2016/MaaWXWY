@@ -1,7 +1,7 @@
 {
     "市集起点": {
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "市集购买_点任务",
         "recognition": "DirectHit",
         "target": [
@@ -15,7 +15,7 @@
         "recognition": "OCR",
         "expected": "市集购买",
         "action": "Click",
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": "市集购买_上滑"
     },
     "市集购买_上滑": {
@@ -27,17 +27,17 @@
         ],
         "end": [
             648,
-            60
+            160
         ],
-        "duration": 400,
-        "post_delay": 1000,
+        "duration": 2000,
+        "post_delay": 2000,
         "next": "市集购买_金色魂晶"
     },
     "市集购买_金色魂晶": {
         "recognition": "OCR",
         "expected": "金色记忆魂晶",
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "市集购买_金色确定"
     },
     "市集购买_金色确定": {
@@ -51,7 +51,7 @@
         "recognition": "OCR",
         "expected": "黑色记忆魂晶",
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "市集购买_黑色确定"
     },
     "市集购买_黑色确定": {
@@ -65,7 +65,7 @@
         "recognition": "OCR",
         "expected": "白色记忆魂晶",
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "市集购买_白色确定"
     },
     "市集购买_白色确定": {
@@ -79,7 +79,7 @@
         "recognition": "OCR",
         "expected": "万象赋魂书签",
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "市集购买_书签确定"
     },
     "市集购买_书签确定": {
@@ -90,6 +90,39 @@
         "next": "市集购买_返回"
     },
     "市集购买_返回": {
+        "recognition": "DirectHit",
+        "action": "ClickKey",
+        "key": 4,
+        "post_delay": 3500,
+        "next": "市集购买_领奖点任务"
+    },
+    "市集购买_领奖点任务": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            80,
+            330,
+            1,
+            1
+        ],
+        "post_delay": 2500,
+        "next": "市集购买_领奖点任务项"
+    },
+    "市集购买_领奖点任务项": {
+        "recognition": "OCR",
+        "expected": "市集购买",
+        "action": "Click",
+        "post_delay": 1500,
+        "next": "市集购买_领领取"
+    },
+    "市集购买_领领取": {
+        "recognition": "OCR",
+        "expected": "领取",
+        "action": "Click",
+        "post_delay": 1500,
+        "next": "市集购买_领奖返回"
+    },
+    "市集购买_领奖返回": {
         "recognition": "DirectHit",
         "action": "ClickKey",
         "key": 4

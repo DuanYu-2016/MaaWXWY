@@ -1,7 +1,7 @@
 {
     "限时活动起点": {
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "每日限时活动_点任务",
         "recognition": "DirectHit",
         "target": [
@@ -15,7 +15,7 @@
         "recognition": "OCR",
         "expected": "每日限时活动",
         "action": "Click",
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": "每日限时活动_列表起点"
     },
     "每日限时活动_列表起点": {
@@ -47,7 +47,7 @@
             1,
             1
         ],
-        "post_delay": 800,
+        "post_delay": 1800,
         "next": "每日限时活动_出战第一关"
     },
     "每日限时活动_出战第一关": {
@@ -59,7 +59,7 @@
             1,
             1
         ],
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": "每日限时活动_编队起点"
     },
     "每日限时活动_编队起点": {
@@ -80,7 +80,7 @@
             90
         ],
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "每日限时活动_编队出战"
     },
     "每日限时活动_编队出战": {
@@ -118,7 +118,7 @@
             1,
             1
         ],
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": "每日限时活动_结算闸门",
         "timeout": 600000
     },
@@ -158,7 +158,7 @@
         ],
         "repeat": 3,
         "repeat_delay": 800,
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": "每日限时活动_出战第二关"
     },
     "每日限时活动_出战第二关": {
@@ -170,7 +170,7 @@
             1,
             1
         ],
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": "每日限时活动_编队出战第二关"
     },
     "每日限时活动_编队出战第二关": {
@@ -208,7 +208,7 @@
             1,
             1
         ],
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": "每日限时活动_结算闸门二",
         "timeout": 600000
     },
@@ -241,12 +241,12 @@
         "recognition": "DirectHit",
         "action": "ClickKey",
         "key": 4,
-        "post_delay": 1000,
+        "post_delay": 4000,
         "next": "每日限时活动_点任务领奖"
     },
     "每日限时活动_点任务领奖": {
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "每日限时活动_点每日奖励",
         "recognition": "DirectHit",
         "target": [
@@ -260,14 +260,14 @@
         "recognition": "OCR",
         "expected": "每日限时活动",
         "action": "Click",
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": "每日限时活动_领奖"
     },
     "每日限时活动_领奖": {
         "recognition": "OCR",
         "expected": "领取",
         "action": "Click",
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": "每日限时活动_返回主界面二"
     },
     "每日限时活动_返回主界面二": {
@@ -284,7 +284,7 @@
             1,
             1
         ],
-        "post_delay": 800,
+        "post_delay": 1800,
         "next": "每日限时活动_编队起点"
     },
     "每日限时活动_上滑": {
@@ -292,14 +292,16 @@
         "action": "Swipe",
         "begin": [
             880,
-            480
+            620
         ],
         "end": [
             880,
-            260
+            200
         ],
         "duration": 400,
-        "post_delay": 500,
-        "next": "每日限时活动_列表起点"
+        "post_delay": 1500,
+        "next": "每日限时活动_列表起点",
+        "repeat": 5,
+        "repeat_delay": 300
     }
 }

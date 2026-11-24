@@ -8,7 +8,7 @@
             1,
             1
         ],
-        "post_delay": 500,
+        "post_delay": 2500,
         "next": "公会6_点公会"
     },
     "公会6_点公会": {
@@ -20,7 +20,7 @@
             1,
             1
         ],
-        "post_delay": 500,
+        "post_delay": 2500,
         "next": "公会6_判断起点"
     },
     "公会6_判断起点": {
@@ -41,7 +41,7 @@
         "recognition": "OCR",
         "expected": "等级6",
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 5500,
         "next": "公会6_出战"
     },
     "公会6_出战": {
@@ -53,7 +53,7 @@
             1,
             1
         ],
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": "公会6_编队起点"
     },
     "公会6_编队起点": {
@@ -74,7 +74,7 @@
             70
         ],
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "公会6_编队出战"
     },
     "公会6_翻页": {
@@ -86,7 +86,7 @@
             1,
             1
         ],
-        "post_delay": 800,
+        "post_delay": 1800,
         "next": "公会6_编队起点"
     },
     "公会6_编队出战": {
@@ -98,7 +98,7 @@
             1,
             1
         ],
-        "post_delay": 1000,
+        "post_delay": 2000,
         "timeout": 60000,
         "next": "公会6_加载闸门"
     },
@@ -124,7 +124,7 @@
             1,
             1
         ],
-        "post_delay": 1000,
+        "post_delay": 2000,
         "timeout": 600000,
         "next": "公会6_结算闸门"
     },
@@ -157,7 +157,7 @@
         "recognition": "DirectHit",
         "action": "ClickKey",
         "key": 4,
-        "post_delay": 1000,
+        "post_delay": 4000,
         "next": "公会6_再点任务"
     },
     "公会6_再点任务": {
@@ -169,7 +169,7 @@
             1,
             1
         ],
-        "post_delay": 500,
+        "post_delay": 2500,
         "next": "公会6_再点公会"
     },
     "公会6_再点公会": {
@@ -181,28 +181,28 @@
             1,
             1
         ],
-        "post_delay": 500,
+        "post_delay": 2500,
         "next": "公会6_领奖点等级6"
     },
     "公会6_领奖点等级6": {
         "recognition": "OCR",
         "expected": "等级6",
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "公会6_领奖点领取"
     },
     "公会6_领奖点领取": {
         "recognition": "OCR",
         "expected": "领取",
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "公会6_领奖确定"
     },
     "公会6_领奖确定": {
         "recognition": "OCR",
         "expected": "确定",
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "公会6_结束返回"
     },
     "公会6_结束返回": {

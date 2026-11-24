@@ -1,7 +1,7 @@
 {
     "结晶起点": {
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "结晶搜集_点任务",
         "recognition": "DirectHit",
         "target": [
@@ -15,7 +15,7 @@
         "recognition": "OCR",
         "expected": "结晶搜集",
         "action": "Click",
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": "结晶搜集_关卡起点"
     },
     "结晶搜集_关卡起点": {
@@ -48,19 +48,20 @@
             80
         ],
         "action": "Click",
-        "post_delay": 1000,
-        "next": "结晶搜集_选9号编队"
+        "post_delay": 2000,
+        "next": "结晶搜集_编队起点"
     },
     "结晶搜集_选9号编队": {
-        "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            617,
-            160,
-            1,
-            1
+        "recognition": "OCR",
+        "expected": "9",
+        "roi": [
+            380,
+            110,
+            400,
+            80
         ],
-        "post_delay": 500,
+        "action": "Click",
+        "post_delay": 1500,
         "next": "结晶搜集_速读确定"
     },
     "结晶搜集_速读确定": {
@@ -86,7 +87,7 @@
             100
         ],
         "action": "Click",
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": "结晶搜集_溢出确定"
     },
     "结晶搜集_溢出确定": {
@@ -99,19 +100,19 @@
             95
         ],
         "action": "Click",
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": "结晶搜集_返回"
     },
     "结晶搜集_返回": {
         "recognition": "DirectHit",
         "action": "ClickKey",
         "key": 4,
-        "post_delay": 1000,
+        "post_delay": 4000,
         "next": "结晶搜集_点任务领奖"
     },
     "结晶搜集_点任务领奖": {
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "结晶搜集_点结晶奖励",
         "recognition": "DirectHit",
         "target": [
@@ -125,14 +126,14 @@
         "recognition": "OCR",
         "expected": "结晶搜集",
         "action": "Click",
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": "结晶搜集_领奖"
     },
     "结晶搜集_领奖": {
         "recognition": "OCR",
         "expected": "领取",
         "action": "Click",
-        "post_delay": 1000,
+        "post_delay": 2000,
         "next": "结晶搜集_领奖返回"
     },
     "结晶搜集_领奖返回": {
@@ -152,7 +153,27 @@
             260
         ],
         "duration": 400,
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "结晶搜集_关卡起点"
+    },
+    "结晶搜集_编队起点": {
+        "recognition": "DirectHit",
+        "action": "DoNothing",
+        "next": [
+            "结晶搜集_选9号编队",
+            "结晶搜集_编队翻页"
+        ]
+    },
+    "结晶搜集_编队翻页": {
+        "recognition": "DirectHit",
+        "action": "Click",
+        "target": [
+            740,
+            145,
+            1,
+            1
+        ],
+        "post_delay": 1800,
+        "next": "结晶搜集_编队起点"
     }
 }

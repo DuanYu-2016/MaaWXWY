@@ -1,7 +1,7 @@
 {
     "任务入口": {
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 2500,
         "next": "公会入口",
         "recognition": "DirectHit",
         "target": [
@@ -21,56 +21,56 @@
             52
         ],
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 2500,
         "next": "等级7领取任务"
     },
     "等级7领取任务": {
         "recognition": "OCR",
         "expected": "等级7",
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "等级7确定一"
     },
     "等级7确定一": {
         "recognition": "OCR",
         "expected": "确定",
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "等级7确定二"
     },
     "等级7确定二": {
         "recognition": "OCR",
         "expected": "确定",
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "等级5领取任务"
     },
     "等级5领取任务": {
         "recognition": "OCR",
         "expected": "等级5",
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "等级5确定一"
     },
     "等级5确定一": {
         "recognition": "OCR",
         "expected": "确定",
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "等级5确定二"
     },
     "等级5确定二": {
         "recognition": "OCR",
         "expected": "确定",
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "等级7领奖"
     },
     "等级7领奖": {
         "recognition": "OCR",
         "expected": "等级7",
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
         "next": "公会_领取"
     },
     "返回主界面": {
@@ -82,7 +82,21 @@
         "recognition": "OCR",
         "expected": "领取",
         "action": "Click",
-        "post_delay": 500,
+        "post_delay": 1500,
+        "next": "等级5领奖"
+    },
+    "等级5领奖": {
+        "recognition": "OCR",
+        "expected": "等级5",
+        "action": "Click",
+        "post_delay": 1500,
+        "next": "公会_领取5"
+    },
+    "公会_领取5": {
+        "recognition": "OCR",
+        "expected": "领取",
+        "action": "Click",
+        "post_delay": 1500,
         "next": "返回主界面"
     }
 }
