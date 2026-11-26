@@ -1,7 +1,7 @@
 {
     "限时活动起点": {
         "action": "Click",
-        "post_delay": 1500,
+        "post_delay": 2500,
         "next": "每日限时活动_点任务",
         "recognition": "DirectHit",
         "target": [
@@ -107,20 +107,23 @@
         ],
         "action": "DoNothing",
         "next": "每日限时活动_右移",
-        "post_delay": 5000
+        "post_delay": 8000
     },
     "每日限时活动_右移": {
         "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            1225,
-            550,
-            1,
-            1
-        ],
+        "action": "Swipe",
         "post_delay": 2000,
         "next": "每日限时活动_结算闸门",
-        "timeout": 600000
+        "timeout": 600000,
+        "begin": [
+            340,
+            308
+        ],
+        "end": [
+            715,
+            308
+        ],
+        "duration": 400
     },
     "每日限时活动_结算闸门": {
         "recognition": "OCR",
@@ -197,20 +200,23 @@
         ],
         "action": "DoNothing",
         "next": "每日限时活动_右移二",
-        "post_delay": 5000
+        "post_delay": 8000
     },
     "每日限时活动_右移二": {
         "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            1225,
-            550,
-            1,
-            1
-        ],
+        "action": "Swipe",
         "post_delay": 2000,
         "next": "每日限时活动_结算闸门二",
-        "timeout": 600000
+        "timeout": 600000,
+        "begin": [
+            340,
+            308
+        ],
+        "end": [
+            715,
+            308
+        ],
+        "duration": 400
     },
     "每日限时活动_结算闸门二": {
         "recognition": "OCR",
@@ -273,7 +279,8 @@
     "每日限时活动_返回主界面二": {
         "recognition": "DirectHit",
         "action": "ClickKey",
-        "key": 4
+        "key": 4,
+        "post_delay": 3000
     },
     "每日限时活动_编队翻页": {
         "recognition": "DirectHit",

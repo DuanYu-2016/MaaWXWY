@@ -35,7 +35,8 @@
         "recognition": "OCR",
         "expected": "施展破甲技能",
         "action": "ClickKey",
-        "key": 4
+        "key": 4,
+        "post_delay": 3000
     },
     "公会6_点等级6": {
         "recognition": "OCR",
@@ -49,7 +50,7 @@
         "action": "Click",
         "target": [
             1217,
-            420,
+            340,
             1,
             1
         ],
@@ -68,10 +69,10 @@
         "recognition": "OCR",
         "expected": "10",
         "roi": [
-            15,
-            285,
+            20,
+            400,
             55,
-            70
+            90
         ],
         "action": "Click",
         "post_delay": 1500,
@@ -81,8 +82,8 @@
         "recognition": "DirectHit",
         "action": "Click",
         "target": [
-            40,
-            520,
+            45,
+            532,
             1,
             1
         ],
@@ -112,21 +113,24 @@
             80
         ],
         "action": "DoNothing",
-        "post_delay": 5000,
+        "post_delay": 8000,
         "next": "公会6_右移"
     },
     "公会6_右移": {
         "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            1041,
-            588,
-            1,
-            1
-        ],
+        "action": "Swipe",
         "post_delay": 2000,
         "timeout": 600000,
-        "next": "公会6_结算闸门"
+        "next": "公会6_结算闸门",
+        "begin": [
+            340,
+            308
+        ],
+        "end": [
+            715,
+            308
+        ],
+        "duration": 400
     },
     "公会6_结算闸门": {
         "recognition": "OCR",
@@ -196,18 +200,12 @@
         "expected": "领取",
         "action": "Click",
         "post_delay": 1500,
-        "next": "公会6_领奖确定"
-    },
-    "公会6_领奖确定": {
-        "recognition": "OCR",
-        "expected": "确定",
-        "action": "Click",
-        "post_delay": 1500,
         "next": "公会6_结束返回"
     },
     "公会6_结束返回": {
         "recognition": "DirectHit",
         "action": "ClickKey",
-        "key": 4
+        "key": 4,
+        "post_delay": 3000
     }
 }

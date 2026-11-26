@@ -139,7 +139,8 @@
     "结晶搜集_领奖返回": {
         "recognition": "DirectHit",
         "action": "ClickKey",
-        "key": 4
+        "key": 4,
+        "post_delay": 3000
     },
     "结晶搜集_上滑": {
         "recognition": "DirectHit",

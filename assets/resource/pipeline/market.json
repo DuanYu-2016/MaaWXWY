@@ -1,7 +1,7 @@
 {
     "市集起点": {
         "action": "Click",
-        "post_delay": 1500,
+        "post_delay": 2500,
         "next": "市集购买_点任务",
         "recognition": "DirectHit",
         "target": [
@@ -125,6 +125,7 @@
     "市集购买_领奖返回": {
         "recognition": "DirectHit",
         "action": "ClickKey",
-        "key": 4
+        "key": 4,
+        "post_delay": 3000
     }
 }

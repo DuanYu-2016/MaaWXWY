@@ -273,7 +273,8 @@
     "收尾返回二": {
         "recognition": "DirectHit",
         "action": "ClickKey",
-        "key": 4
+        "key": 4,
+        "post_delay": 3000
     },
     "右移一格": {
         "recognition": "DirectHit",

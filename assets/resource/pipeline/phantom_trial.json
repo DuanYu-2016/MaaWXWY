@@ -62,7 +62,7 @@
             1,
             1
         ],
-        "post_delay": 2000,
+        "post_delay": 5000,
         "next": "幻境_1关_选编队"
     },
     "幻境_1关_选编队": {
@@ -178,20 +178,23 @@
         ],
         "action": "DoNothing",
         "next": "幻境_1关_右移",
-        "post_delay": 5000
+        "post_delay": 8000
     },
     "幻境_1关_右移": {
         "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            1225,
-            550,
-            1,
-            1
-        ],
+        "action": "Swipe",
         "post_delay": 2000,
         "next": "幻境_1关_结算闸门",
-        "timeout": 600000
+        "timeout": 600000,
+        "begin": [
+            340,
+            308
+        ],
+        "end": [
+            715,
+            308
+        ],
+        "duration": 400
     },
     "幻境_1关_结算闸门": {
         "recognition": "OCR",
@@ -253,7 +256,7 @@
             1,
             1
         ],
-        "post_delay": 2000,
+        "post_delay": 5000,
         "next": "幻境_2关_选编队"
     },
     "幻境_2关_选编队": {
@@ -369,20 +372,23 @@
         ],
         "action": "DoNothing",
         "next": "幻境_2关_右移",
-        "post_delay": 5000
+        "post_delay": 8000
     },
     "幻境_2关_右移": {
         "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            1225,
-            550,
-            1,
-            1
-        ],
+        "action": "Swipe",
         "post_delay": 2000,
         "next": "幻境_2关_结算闸门",
-        "timeout": 600000
+        "timeout": 600000,
+        "begin": [
+            340,
+            308
+        ],
+        "end": [
+            715,
+            308
+        ],
+        "duration": 400
     },
     "幻境_2关_结算闸门": {
         "recognition": "OCR",
@@ -468,7 +474,7 @@
             1,
             1
         ],
-        "post_delay": 2000,
+        "post_delay": 5000,
         "next": "幻境_3关_选编队"
     },
     "幻境_3关_选编队": {
@@ -584,20 +590,23 @@
         ],
         "action": "DoNothing",
         "next": "幻境_3关_右移",
-        "post_delay": 5000
+        "post_delay": 8000
     },
     "幻境_3关_右移": {
         "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            1225,
-            550,
-            1,
-            1
-        ],
+        "action": "Swipe",
         "post_delay": 2000,
         "next": "幻境_3关_结算闸门",
-        "timeout": 600000
+        "timeout": 600000,
+        "begin": [
+            340,
+            308
+        ],
+        "end": [
+            715,
+            308
+        ],
+        "duration": 400
     },
     "幻境_3关_结算闸门": {
         "recognition": "OCR",
@@ -659,7 +668,7 @@
             1,
             1
         ],
-        "post_delay": 2000,
+        "post_delay": 5000,
         "next": "幻境_4关_选编队"
     },
     "幻境_4关_选编队": {
@@ -775,20 +784,23 @@
         ],
         "action": "DoNothing",
         "next": "幻境_4关_右移",
-        "post_delay": 5000
+        "post_delay": 8000
     },
     "幻境_4关_右移": {
         "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            1225,
-            550,
-            1,
-            1
-        ],
+        "action": "Swipe",
         "post_delay": 2000,
         "next": "幻境_4关_结算闸门",
-        "timeout": 600000
+        "timeout": 600000,
+        "begin": [
+            340,
+            308
+        ],
+        "end": [
+            715,
+            308
+        ],
+        "duration": 400
     },
     "幻境_4关_结算闸门": {
         "recognition": "OCR",
@@ -850,7 +862,7 @@
             1,
             1
         ],
-        "post_delay": 2000,
+        "post_delay": 5000,
         "next": "幻境_5关_选编队"
     },
     "幻境_5关_选编队": {
@@ -966,20 +978,23 @@
         ],
         "action": "DoNothing",
         "next": "幻境_5关_右移",
-        "post_delay": 5000
+        "post_delay": 8000
     },
     "幻境_5关_右移": {
         "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            1225,
-            550,
-            1,
-            1
-        ],
+        "action": "Swipe",
         "post_delay": 2000,
         "next": "幻境_5关_结算闸门",
-        "timeout": 600000
+        "timeout": 600000,
+        "begin": [
+            340,
+            308
+        ],
+        "end": [
+            715,
+            308
+        ],
+        "duration": 400
     },
     "幻境_5关_结算闸门": {
         "recognition": "OCR",
@@ -1041,7 +1056,7 @@
             1,
             1
         ],
-        "post_delay": 2000,
+        "post_delay": 5000,
         "next": "幻境_6关_翻页"
     },
     "幻境_6关_翻页": {
@@ -1169,20 +1184,23 @@
         ],
         "action": "DoNothing",
         "next": "幻境_6关_右移",
-        "post_delay": 5000
+        "post_delay": 8000
     },
     "幻境_6关_右移": {
         "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            1225,
-            550,
-            1,
-            1
-        ],
+        "action": "Swipe",
         "post_delay": 2000,
         "next": "幻境_6关_结算闸门",
-        "timeout": 600000
+        "timeout": 600000,
+        "begin": [
+            340,
+            308
+        ],
+        "end": [
+            715,
+            308
+        ],
+        "duration": 400
     },
     "幻境_6关_结算闸门": {
         "recognition": "OCR",
@@ -1244,7 +1262,7 @@
             1,
             1
         ],
-        "post_delay": 2000,
+        "post_delay": 5000,
         "next": "幻境_7关_选编队"
     },
     "幻境_7关_选编队": {
@@ -1360,20 +1378,23 @@
         ],
         "action": "DoNothing",
         "next": "幻境_7关_右移",
-        "post_delay": 5000
+        "post_delay": 8000
     },
     "幻境_7关_右移": {
         "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            1225,
-            550,
-            1,
-            1
-        ],
+        "action": "Swipe",
         "post_delay": 2000,
         "next": "幻境_7关_结算闸门",
-        "timeout": 600000
+        "timeout": 600000,
+        "begin": [
+            340,
+            308
+        ],
+        "end": [
+            715,
+            308
+        ],
+        "duration": 400
     },
     "幻境_7关_结算闸门": {
         "recognition": "OCR",
@@ -1435,7 +1456,7 @@
             1,
             1
         ],
-        "post_delay": 2000,
+        "post_delay": 5000,
         "next": "幻境_8关_选编队"
     },
     "幻境_8关_选编队": {
@@ -1551,20 +1572,23 @@
         ],
         "action": "DoNothing",
         "next": "幻境_8关_右移",
-        "post_delay": 5000
+        "post_delay": 8000
     },
     "幻境_8关_右移": {
         "recognition": "DirectHit",
-        "action": "Click",
-        "target": [
-            1225,
-            550,
-            1,
-            1
-        ],
+        "action": "Swipe",
         "post_delay": 2000,
         "next": "幻境_8关_结算闸门",
-        "timeout": 600000
+        "timeout": 600000,
+        "begin": [
+            340,
+            308
+        ],
+        "end": [
+            715,
+            308
+        ],
+        "duration": 400
     },
     "幻境_8关_结算闸门": {
         "recognition": "OCR",
@@ -1594,7 +1618,8 @@
     "幻境_返回主界面": {
         "recognition": "DirectHit",
         "action": "ClickKey",
-        "key": 4
+        "key": 4,
+        "post_delay": 3000
     },
     "幻境_进活动": {
         "recognition": "OCR",

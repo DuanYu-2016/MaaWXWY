@@ -76,7 +76,8 @@
     "返回主界面": {
         "recognition": "DirectHit",
         "action": "ClickKey",
-        "key": 4
+        "key": 4,
+        "post_delay": 3000
     },
     "公会_领取": {
         "recognition": "OCR",
